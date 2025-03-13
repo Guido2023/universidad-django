@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universidad</title>
-</head>
-<body>
-    <h1>Bienvenido a la Universidad</h1>
-</body>
-</html>
+{% extends "plantilla.html" %}
+{% load static %}
+{% block titulo %}
+    <title>Inicio Universidad</title>
+{% endblock titulo %}
+{% block contenido %}
+<div class="d-flex flex-column justify-content-center align-items-center">
+    <h1 class="mt-4 mb-4">Muestra el contenido</h1>
+    <img class="w-50" src="{% static 'img/universidad.jpg' %}" alt=""/>
+</div>
+{% endblock contenido %}
