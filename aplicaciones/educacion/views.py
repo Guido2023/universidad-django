@@ -10,5 +10,5 @@ def carreras(request):
     carrerasDbb = Carrera.objects.all()
     
     return render(request, 'carreras.html', {
-        'carreras': carrerasDbb
+        "carreras": carrerasDbb
     })
